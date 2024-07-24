@@ -1111,9 +1111,9 @@ const _hoisted_3 = { class: "multiselect__spinner" };
 const _hoisted_4 = { key: 0 };
 const _hoisted_5 = { class: "multiselect__option" };
 const _hoisted_6 = { class: "multiselect__option" };
-const _hoisted_7 = /*#__PURE__*/createTextVNode("No elements found. Consider changing the search query.");
+const _hoisted_7 = /*#__PURE__*/createTextVNode(multiselect.notFound);
 const _hoisted_8 = { class: "multiselect__option" };
-const _hoisted_9 = /*#__PURE__*/createTextVNode("List is empty.");
+const _hoisted_9 = /*#__PURE__*/createTextVNode(multiselect.empty);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (openBlock(), createBlock("div", {
@@ -1261,7 +1261,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
               ? (openBlock(), createBlock("li", _hoisted_4, [
                   createVNode("span", _hoisted_5, [
                     renderSlot(_ctx.$slots, "maxElements", {}, () => [
-                      createTextVNode("Maximum of " + toDisplayString(_ctx.max) + " options selected. First remove a selected option to select another.", 1 /* TEXT */)
+                      createTextVNode(multiselect.max, 1 /* TEXT */)
                     ])
                   ])
                 ]))
